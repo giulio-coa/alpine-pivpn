@@ -1,0 +1,44 @@
+name: Bug Report
+description: File a bug report
+labels:
+  - bug
+  - help wanted
+assignees:
+  - giulio-coa
+body:
+  - type: checkboxes
+    id: checklist
+    attributes:
+      options:
+        - label: I am sure the error is coming from project's code and not elsewhere.
+        - label: I have searched in the issue tracker for similar bug reports, including closed ones.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened ?
+      description: A clear and concise description of the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: step-to-reproduce
+    attributes:
+      label: How can we reproduce the bug ?
+      description: [A minimal, reproducible example](https://stackoverflow.com/help/minimal-reproducible-example).
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](../CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

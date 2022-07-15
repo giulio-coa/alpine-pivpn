@@ -1,0 +1,28 @@
+name: Feature Request
+description: Suggest ideas, new features or enhancements
+labels:
+  - enhancement
+assignees:
+  - giulio-coa
+body:
+  - type: checkboxes
+    id: checklist
+    attributes:
+      options:
+        - label: I believe the idea is awesome and would benefit the template.
+        - label: I have searched in the issue tracker for similar requests, including closed ones.
+  - type: textarea
+    id: feature
+    attributes:
+      label: What is the request ?
+      description: A detailed description of the request.
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](../CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

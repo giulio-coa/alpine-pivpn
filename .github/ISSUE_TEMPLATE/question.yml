@@ -1,0 +1,30 @@
+name: Ask Question
+description: Ask a project related question
+labels:
+  - question
+assignees:
+  - giulio-coa
+body:
+  - type: markdown
+    attributes:
+      value: "This place is for issues about the project, it's **not a forum**."
+  - type: markdown
+    attributes:
+      value: "If you'd like to post a question, please move to https://stackoverflow.com. Useful information on how to ask good questions can be found here: https://stackoverflow.com/help/how-to-ask."
+  - type: markdown
+    attributes:
+      value: "Thanks."
+  - type: textarea
+    id: questions
+    attributes:
+      label: What do you want ask ?
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](../CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
