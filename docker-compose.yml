@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  pivpn:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    cap_add:
+      - NET_ADMIN
+    container_name: pi-vpn
+    ports:
+      - target: 1194 # DON'T CHANGE THIS PORT
+        published: 1194
+        protocol: udp
+    restart: unless-stopped
